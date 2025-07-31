@@ -29,7 +29,7 @@ html {
 }
 
 .medium {
-  width: 40%;
+  flex: 1;
 }
 
 .small {
@@ -37,7 +37,8 @@ html {
 }
 
 .center-box {
-  width: 40%;
+  position: relative;
+  width: 440px;
   border-bottom: 0.3px solid rgba(255, 129, 42, 0.1);
 }
 
@@ -67,7 +68,7 @@ html {
 .box h1 {
   font-weight: 600;
   color: white;
-  font-size: 120px;
+  font-size: 100px;
   letter-spacing: 4px;
   font-family: 'DM Sans', Helvetica, sans-serif;
 }
@@ -84,12 +85,14 @@ html {
 
 .line.right {
   position: absolute;
-  right: 39%;
+  right: 12%;
+  top: 50%;
 }
 
 .line.left {
   position: absolute;
-  left: 39%;
+  left: 12%;
+  top: 50%;
 }
 
 .join_club {
@@ -100,7 +103,13 @@ html {
   cursor: pointer;
   padding: 10px 20px;
   font-size: 15px;
+  border-top: 1px solid rgb(255, 245, 245);
+  border-left: 1px solid rgb(255, 245, 245);
+  border-right: 1px solid rgb(255, 245, 245);
+  border-bottom: none;
 }
+
+
 
 .join_club,
 .Notes {
@@ -157,7 +166,8 @@ html {
 .bigStar{
   position: absolute;
   top: 61%;
-  left: 14%;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: -1;
 }
 
@@ -206,6 +216,7 @@ color: #FFF;
 }
 
 .two.middle {
+  position: relative;
   flex: 0 0 575px; 
 }
 
@@ -229,6 +240,7 @@ color: #FFF;
 }
 
 .three.middle {
+  position: relative;
   flex: 0 0 575px; 
 }
 
@@ -303,6 +315,7 @@ color: #FFF;
 }
 
 .ek.middle {
+  position: relative;
   flex: 0 0 575px; 
   display: flex;
   justify-content: center;
@@ -355,6 +368,7 @@ color: #FFF;
 }
 
 .do.middle, .tin.middle, .char.middle, .panch.middle, .che.middle, .saath.middle, .ath.middle, .noo.middle, .das.middle, .egyara.middle {
+  position: relative;
   flex: 0 0 575px; 
   display: flex;
   justify-content: center;
@@ -377,6 +391,7 @@ color: #FFF;
 
 .shee_two .middle, .shee_three .middle, .shee_four .middle{
   background: linear-gradient(180deg, rgba(211, 135, 255, 0.00) 0%, rgba(211, 135, 255, 0.05) 100%);
+
 }
 
 .content{
@@ -386,6 +401,7 @@ color: #FFF;
   justify-content: center;
   background: linear-gradient(180deg, rgba(211, 135, 255, 0.00) 0%, rgba(211, 135, 255, 0.05) 100%);
   opacity: 0.4;
+  height: 235px;
 }
 
 
@@ -470,6 +486,7 @@ color: #FFF;
 }
 
 .ekk.middle {
+  position: relative;
   flex: 0 0 575px; 
   display: flex;
   justify-content: center;
@@ -494,6 +511,7 @@ color: #FFF;
 }
 
 .doo.middle, .tinn.middle, .charr.middle{
+  position: relative;
   flex: 0 0 575px; 
   display: flex;
   justify-content: center;
@@ -713,6 +731,7 @@ color: #FFF;
 
 .scan.twoo{
   flex: 0 0 575px;
+  position: relative;
 }
 
 .scan.onee,
@@ -781,6 +800,8 @@ color: #FFF;
   border: 0.75px solid #FFF;
   background: linear-gradient(3deg, #E13E00 2.64%, #FF812A 97.4%);
   mix-blend-mode: plus-lighter;
+  text-decoration: none;
+  color: #F2F2F2;
 }
 
 
@@ -797,6 +818,7 @@ color: #FFF;
 }
 
 .Ekkk.middle {
+  position: relative;
   flex: 0 0 575px; 
   display: flex;
   justify-content: center;
@@ -856,6 +878,7 @@ color: #FFF;
   border: 0.3px solid rgba(255, 129, 42, 0.1);
   border-top: none;
   padding: 24px;
+  position: relative;
 }
 
 .question {
@@ -904,5 +927,46 @@ color: #FFF;
   max-height: 500px;
   opacity: 1;
   margin-top: 10px;
+}
+
+/*----------------------------*/
+.chart{
+  padding: 24px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+/*-------------------------------*/
+.box center-box{
+  position: relative;
+}
+
+.dot{
+  width: 4px;
+  height: 4px;
+  background-color: #D387FF;
+  border-radius: 2px;
+
+  position: absolute;
+}
+
+.dot.top_left{
+  left: -2.5px;
+  top: -1.5px;
+}
+
+.dot.bottom_left{
+  left: -2.5px;
+  bottom: -1.5px;
+}
+
+.dot.top_right{
+  right: -2.5px;
+  top: -1.5px;
+}
+
+.dot.bottom_right{
+  right: -2.5px;
+  bottom: -1.5px;
 }
 
